@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:id="@+id/rel"
+    card_view:cardCornerRadius="10dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="1.9"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imgdelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/deleteb"/>
+
+        <TextView
+            android:id="@+id/txtstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black"
+            android:text="Start Time" />
+
+
+        <TextView
+            android:id="@+id/txtstartvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txtstart"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="00:00 am"
+            android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/txtend"
+        android:layout_below="@+id/txtstartvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="5dp"
+        android:text="End Time"/>
+
+
+    <TextView
+        android:id="@+id/txtendvalue"
+        android:layout_below="@+id/txtstartvalue"
+        android:layout_toRightOf="@+id/txtend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="5dp"
+        android:text="00:00 am"/>
+
+
+    <TextView
+        android:id="@+id/txtaudio"
+        android:layout_below="@+id/txtendvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginHorizontal="5dp"
+        android:text="Audio"/>
+
+
+    <TextView
+        android:id="@+id/txtaudiovalue"
+        android:layout_below="@+id/txtendvalue"
+        android:layout_toRightOf="@+id/txtaudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="00:00 am"/>
+
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtaudiovalue"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Description"
+            android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/txtdescriptionvalue"
+        android:layout_below="@+id/txtaudiovalue"
+        android:layout_toRightOf="@+id/txtdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginHorizontal="5dp"
+        android:text="new disc"/>
+
+        <TextView
+            android:id="@+id/startDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdescription"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Start Date"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdescriptionvalue"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/startDate1"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="dd/mm/yy"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/startDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startDate1"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="End Date"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startDate1"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/startDate2"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="dd/mm/yy"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

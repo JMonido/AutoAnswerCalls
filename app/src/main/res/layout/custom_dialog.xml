@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:id="@+id/rel"
+    card_view:cardCornerRadius="10dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="1.9"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Start Time"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/start"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:text="00:00"
+            android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_below="@+id/timestart"
+        android:layout_marginStart="10dp"
+        android:text="End Time"/>
+
+        <TextView
+            android:id="@+id/timeend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timestart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/end"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:text="00:00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editdiscriptions"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Start Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/enddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startdate"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="End Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editdiscriptions"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/startdate"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:text="Select Start Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Date1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/startdate"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:text="Select End Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/selectaudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Audio"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/audiofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/selectaudio"
+            android:ellipsize="start"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="Select Audio"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/discriptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectaudio"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Description"
+            android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editdiscriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_below="@+id/discriptions"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Descriptions"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Date2"
+        android:text="Add"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
